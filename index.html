@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <div class="report">
+    <div class="user__report">
+      <picture>
+        <img src="./images/image-jeremy.png" alt="Jeremy face">
+      </picture>
+  
+      <div class="user">
+        <span class="label">Report for</span>
+        <span class="name">Jeremy Robson</span>
+      </div>
+    </div>
+
+    <div class="period__report">
+      <ul class="period">
+        <li>Daily</li>
+        <li>Weekly</li>
+        <li>Monthly</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid__layout">
+    <div class="work__layout">
+      <div class="header__layout">
+        <img src="./images/icon-work.svg" alt="Icon work svg">
+      </div>
+
+      <div class="main__content">
+        <div class="category">
+          <h2>Work</h2>
+
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+  
+        </div>
+
+        <div class="time__trackers">
+          <div class="daily">
+            <p class="time__tracked">5hrs </p>
+          </div>
+    
+          <div class="daily previous">
+            <p>Previous - 7hrs </p>
+          </div>
+
+          <div class="weekly hidden">
+            <p class="time__tracked">32hrs </p>
+          </div>
+    
+          <div class="weekly previous hidden">
+            <p>Previous - 36hrs </p>
+          </div>
+    
+          <div class="monthly hidden">
+            <p class="time__tracked">103hrs </p>
+          </div>
+    
+          <div class="monthly previous hidden">
+            <p>Previous - 128hrs </p>
+          </div>
+        </div>
+  
+        
+      </div>
+    </div>
+
+    <div class="play__layout">
+      <div class="header__layout">
+        <img src="./images/icon-play.svg" alt="Icon play svg">
+      </div>
+
+      <div class="main__content">
+        <div class="category">
+          <h2>Play</h2>
+
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+  
+        </div>
+
+        <div class="time__trackers">
+          <div class="daily">
+            <p class="time__tracked">1hr </p>
+          </div>
+    
+          <div class="daily previous">
+            <p>Previous - 2hrs </p>
+          </div>
+
+          <div class="weekly hidden">
+            <p class="time__tracked">10hrs </p>
+          </div>
+    
+          <div class="weekly previous hidden">
+            <p>Previous - 8hrs </p>
+          </div>
+    
+          <div class="monthly hidden">
+            <p class="time__tracked">23hrs </p>
+          </div>
+    
+          <div class="monthly previous hidden">
+            <p>Previous - 29hrs </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="study__layout">
+      <div class="header__layout">
+        <img src="./images/icon-study.svg" alt="Icon study svg">
+      </div>
+
+      <div class="main__content">
+        <div class="category">
+          <h2>Study</h2>
+
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+  
+        </div>
+
+        <div class="time__trackers">
+          <div class="daily">
+            <p class="time__tracked">0hr </p>
+          </div>
+    
+          <div class="daily previous">
+            <p>Previous - 1hrs </p>
+          </div>
+
+          <div class="weekly hidden">
+            <p class="time__tracked">4hrs </p>
+          </div>
+    
+          <div class="weekly previous hidden">
+            <p>Previous - 7hrs </p>
+          </div>
+    
+          <div class="monthly hidden">
+            <p class="time__tracked">13hrs </p>
+          </div>
+    
+          <div class="monthly previous hidden">
+            <p>Previous - 19hrs </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="exercise__layout">
+      <div class="header__layout">
+        <img src="./images/icon-exercise.svg" alt="Icon study svg">
+      </div>
+
+      <div class="main__content">
+        <div class="category">
+          <h2>Exercise</h2>
+
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+  
+        </div>
+
+        <div class="time__trackers">
+          <div class="daily">
+            <p class="time__tracked">1hr </p>
+          </div>
+    
+          <div class="daily previous">
+            <p>Previous - 1hr </p>
+          </div>
+
+          <div class="weekly hidden">
+            <p class="time__tracked">4hrs </p>
+          </div>
+    
+          <div class="weekly previous hidden">
+            <p>Previous - 5hrs </p>
+          </div>
+    
+          <div class="monthly hidden">
+            <p class="time__tracked">11hrs </p>
+          </div>
+    
+          <div class="monthly previous hidden">
+            <p>Previous - 18hrs </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="social__layout">
+      <div class="header__layout">
+        <img src="./images/icon-social.svg" alt="Icon study svg">
+      </div>
+
+      <div class="main__content">
+        <div class="category">
+          <h2>Social</h2>
+
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+  
+        </div>
+
+        <div class="time__trackers">
+          <div class="daily">
+            <p class="time__tracked">1hr </p>
+          </div>
+    
+          <div class="daily previous">
+            <p>Previous - 3hrs </p>
+          </div>
+
+          <div class="weekly hidden">
+            <p class="time__tracked">5hrs </p>
+          </div>
+    
+          <div class="weekly previous hidden">
+            <p>Previous - 10hrs </p>
+          </div>
+    
+          <div class="monthly hidden">
+            <p class="time__tracked">21hrs </p>
+          </div>
+    
+          <div class="monthly previous hidden">
+            <p>Previous - 23hrs </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="self__care__layout">
+      <div class="header__layout">
+        <img src="./images/icon-self-care.svg" alt="Icon study svg">
+      </div>
+
+      <div class="main__content">
+        <div class="category">
+          <h2>Self Care</h2>
+
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+  
+        </div>
+
+        <div class="time__trackers">
+          <div class="daily">
+            <p class="time__tracked">0hr </p>
+          </div>
+    
+          <div class="daily previous">
+            <p>Previous - 1hr </p>
+          </div>
+
+          <div class="weekly hidden">
+            <p class="time__tracked">2hrs </p>
+          </div>
+    
+          <div class="weekly previous hidden">
+            <p>Previous - 2hrs </p>
+          </div>
+    
+          <div class="monthly hidden">
+            <p class="time__tracked">7hrs </p>
+          </div>
+    
+          <div class="monthly previous hidden">
+            <p>Previous - 11hrs </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

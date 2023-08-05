@@ -1,0 +1,322 @@
+:root{
+    --clr-primary-blue: hsl(246, 80%, 60%);
+    --clr-primary-light-red-work: hsl(15, 100%, 70%);
+    --clr-primary-soft-blue-play: hsl(195, 74%, 62%);
+    --clr-primary-light-red-study: hsl(348, 100%, 68%);
+    --clr-primary-lime-green-exercise: hsl(145, 58%, 55%);
+    --clr-primary-violet-social: hsl(264, 64%, 52%);
+    --clr-primary-soft-orange-self-care: hsl(43, 84%, 65%);
+
+    --clr-neutral-very-dark-blue: hsl(226, 43%, 10%);
+    --clr-neutral-dark-blue: hsl(235, 46%, 20%);
+    --clr-neutral-desaturated-blue: hsl(235, 45%, 61%);
+    --clr-neutral-pale-blue: hsl(236, 100%, 87%);
+    --clr-neutral-paler-blue: hsl(238, 36%, 60%);
+
+    --ff-rubik: 'Rubik', sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body{
+    background-color: var(--clr-neutral-very-dark-blue);
+    font-family: var(--ff-rubik);
+    font-weight: var(--fw-regular);
+    font-size: 0.9rem;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .grid__layout{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .work__layout, .play__layout, .study__layout, .exercise__layout, .social__layout, .self__care__layout{
+    background-color: var(--clr-neutral-dark-blue);
+    margin: 0 3.25rem 1rem 3.25rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 300px;
+  }
+
+  .report{
+    background-color: var(--clr-primary-blue);
+    margin: 3.25rem 3.25rem 1rem 3.25rem;
+    border-radius: 0.5rem;
+    max-width: 300px;
+  }
+
+  .report img{
+    width: 50px;
+    border: solid white;
+    border-radius: 100%;
+  }
+
+  .report p{
+    width: 120px;
+  }
+
+  .user__report{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .period{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--clr-neutral-dark-blue);
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  
+  .period li{
+    list-style: none;
+    color: var(--clr-neutral-paler-blue);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .user {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+  
+  .label {
+    font-size: 14px;
+    color: #999; 
+  }
+  
+  .name {
+    font-size: 20px;
+    color: #999; 
+  }
+
+  .work__layout{
+    background-color: var(--clr-primary-light-red-work);
+  }
+
+  .play__layout{
+    background-color: var(--clr-primary-soft-blue-play);
+  }
+
+  .study__layout{
+    background-color: var(--clr-primary-light-red-study);
+  }
+
+  .exercise__layout{
+    background-color: var(--clr-primary-lime-green-exercise);
+  }
+
+  .social__layout{
+    background-color: var(--clr-primary-violet-social);
+  }
+
+  .self__care__layout{
+    background-color: var(--clr-primary-soft-orange-self-care);
+  }
+
+  .header__layout{
+    display:flex;
+    justify-content: flex-end;
+    z-index: 1;
+    position: relative;
+    margin-right: 1rem;
+    margin-top: -1rem;
+  }
+
+  .exercise__layout > .header__layout > img{
+    margin-top: 1rem;
+  }
+
+  .main__content{
+    background-color: var(--clr-neutral-dark-blue);
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .time__trackers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .time__tracked{
+    font-size: 1.5rem;
+    color: gray;
+    font-weight: var(--fw-light);
+  }
+
+  h2{
+    color: white;
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+  }
+
+  .previous{
+    color: #999; 
+  }
+
+  @media(min-width:600px){
+    .grid__layout{
+      grid-template-columns: repeat(2, 300px);
+    }
+
+    .main__content{
+      height: 100%;
+    }
+
+    .report{
+      width: 500px;
+      max-width: none;
+    }
+  }
+
+  @media(min-width:875px){
+    body{
+        display: flex;
+        place-content: center;
+        place-items: center;
+    }
+
+    .grid__layout{
+        grid-template-columns: repeat(3,210px);
+        grid-template-rows: repeat(2,200px);
+    }
+
+    .main__content{
+        height: 100%;
+    }
+
+    .time__trackers{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .time__tracked{
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    .work__layout, .play__layout, .study__layout, .exercise__layout, .social__layout, .self__care__layout{
+        max-width: 190px;
+        margin: 1rem;
+        height: 180px;
+      }
+
+    svg{
+      cursor: pointer;
+    }
+
+    .user__report{
+        place-items: unset;
+        flex-direction: column;
+        padding-bottom: 2.5rem;
+    }
+
+    picture{
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .name{
+        font-size: 2rem;
+        max-width: 100px;
+        color: white;
+        font-weight: var(--fw-light);
+        line-height: 1.2;
+    }
+
+    .period{
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 0.5;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .period li{
+        padding-left: 1rem;
+        cursor: pointer;
+    }
+
+    .period li:hover{
+      color: white;
+    }
+
+    .report{
+        width: 200px;
+        margin: 0;
+    }
+  }
